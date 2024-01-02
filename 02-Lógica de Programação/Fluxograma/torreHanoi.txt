@@ -1,0 +1,7 @@
+Passe o anel pequeno para o pino 3.
+Passe o anel médio para o pino 2.
+Passe o anel pequeno para o pino 2.
+Passe o anel grande para o pino 3.
+Passe o anel pequeno para o pino 1.
+Passe o anel médio para o pino 3.
+Passe o anel pequeno para o pino 3.
