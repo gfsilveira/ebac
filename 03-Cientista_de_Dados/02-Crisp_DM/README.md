@@ -1,0 +1,1 @@
+# Módulos do curso Cientista de Dados no paradigma Crisp-DM da EBAC

@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" modified="2024-01-03T17:53:21.054Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="o2L7rzsAeC4ojrbFGYSe" version="22.1.16" type="github">
+  <diagram name="Página-1" id="DUCcIh8IBGZuuv4BlO6v">
+    <mxGraphModel dx="396" dy="220" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T4i21gHpfyxTUXk2YuZU-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="T4i21gHpfyxTUXk2YuZU-1" target="T4i21gHpfyxTUXk2YuZU-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T4i21gHpfyxTUXk2YuZU-1" value="Início" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="T4i21gHpfyxTUXk2YuZU-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="T4i21gHpfyxTUXk2YuZU-2" target="T4i21gHpfyxTUXk2YuZU-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T4i21gHpfyxTUXk2YuZU-2" value="Acionar o Interruptor" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="T4i21gHpfyxTUXk2YuZU-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="T4i21gHpfyxTUXk2YuZU-4" target="T4i21gHpfyxTUXk2YuZU-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T4i21gHpfyxTUXk2YuZU-9" value="Não" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" parent="T4i21gHpfyxTUXk2YuZU-8" vertex="1" connectable="0">
+          <mxGeometry x="0.567" y="-1" relative="1" as="geometry">
+            <mxPoint x="-35" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8ZvAAAM8YKSavb3oVcAx-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="T4i21gHpfyxTUXk2YuZU-4" target="8ZvAAAM8YKSavb3oVcAx-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ZvAAAM8YKSavb3oVcAx-3" value="Sim" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="8ZvAAAM8YKSavb3oVcAx-2">
+          <mxGeometry x="-0.3333" y="-3" relative="1" as="geometry">
+            <mxPoint x="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T4i21gHpfyxTUXk2YuZU-4" value="A lâmpada funciona?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="295" y="300" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T4i21gHpfyxTUXk2YuZU-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="T4i21gHpfyxTUXk2YuZU-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="113.80952380952375" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="685" y="114" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T4i21gHpfyxTUXk2YuZU-12" value="Faça&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Providencie uma lâmpada nova.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Vá até o local da lâmpada.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Troque a lâmpada pela nova.&lt;/span&gt;&lt;/div&gt;" style="shape=internalStorage;whiteSpace=wrap;html=1;backgroundOutline=1;dx=0;dy=20;" parent="1" vertex="1">
+          <mxGeometry x="590" y="290" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8ZvAAAM8YKSavb3oVcAx-1" value="Fim" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
