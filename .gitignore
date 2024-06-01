@@ -5,3 +5,7 @@ __pycache__
 streamlit_env
 ebac_env
 old_data
+
+# Arquivos grandes
+large_df.csv
+bank-additional-full-40.csv
