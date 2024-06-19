@@ -1,0 +1,7 @@
+2024-06-17 17:58:07.145 -03 [21088] LOG:  sistema de banco de dados foi desligado em 2024-06-17 17:57:49 -03
+2024-06-17 18:03:07.148 -03 [29176] LOG:  ponto de verificação começando:  time
+2024-06-17 18:03:15.279 -03 [29176] LOG:  ponto de verificação concluído: escritos 65 buffers (0.4%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=6.778 s, sincronizados=1.169 s, total=8.139 s; sincronizados files=30, mais longo=0.137 s, média=0.039 s; distância=324 kB, estimado=324 kB; lsn=0/15BF428, refeito lsn=0/15BF3F0
+2024-06-17 18:19:02.596 -03 [22808] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
+2024-06-17 18:23:07.331 -03 [29176] LOG:  ponto de verificação começando:  time
+2024-06-17 18:23:08.627 -03 [29176] LOG:  ponto de verificação concluído: escritos 5 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.545 s, sincronizados=0.065 s, total=1.302 s; sincronizados files=2, mais longo=0.041 s, média=0.033 s; distância=29 kB, estimado=294 kB; lsn=0/15C6B68, refeito lsn=0/15C6B30
+2024-06-17 19:42:39.159 -03 [33812] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054

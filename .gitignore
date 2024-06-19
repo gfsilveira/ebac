@@ -1,3 +1,4 @@
+# Pastas
 __pycache__
 01-Planejamento de Carreira
 00-Consultoria de Carreira
@@ -5,6 +6,7 @@ __pycache__
 streamlit_env
 ebac_env
 old_data
+21_modulo/data
 
 # Arquivos grandes
 large_df.csv
