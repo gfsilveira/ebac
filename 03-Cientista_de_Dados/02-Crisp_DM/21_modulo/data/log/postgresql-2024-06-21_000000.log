@@ -1,0 +1,36 @@
+2024-06-21 17:11:27.751 -03 [27212] ERRO:  não existe a relação "costumer" no caractere 65
+2024-06-21 17:11:27.751 -03 [27212] INSTRUÇÂO:  SELECT *
+	            FROM rental as a
+	                LEFT JOIN costumer as b
+	                    on a.rental_id = b.rental_id;
+2024-06-21 17:12:11.372 -03 [8] ERRO:  não existe a coluna b.rental_id no caractere 116
+2024-06-21 17:12:11.372 -03 [8] DICA:  Talvez você queira fazer referência à coluna "a.rental_id".
+2024-06-21 17:12:11.372 -03 [8] INSTRUÇÂO:  SELECT *
+	            FROM rental as a
+	                LEFT JOIN customer as b
+	                    on a.rental_id = b.rental_id;
+2024-06-21 17:23:29.172 -03 [15644] ERRO:  não existe a coluna c.film_actor_id no caractere 281
+2024-06-21 17:23:29.172 -03 [15644] INSTRUÇÂO:  SELECT *
+	            FROM rental as a
+	                LEFT JOIN inventory as b
+	                    on a.inventory_id = b.inventory_id
+	                LEFT JOIN film as c
+	                    on b.film_id = c.film_id
+	                LEFT JOIN film_actor as d
+	                    on c.film_actor_id = d.film_actor_id;
+2024-06-21 17:24:03.925 -03 [23804] ERRO:  não existe a coluna c.actor_id no caractere 281
+2024-06-21 17:24:03.925 -03 [23804] DICA:  Talvez você queira fazer referência à coluna "d.actor_id".
+2024-06-21 17:24:03.925 -03 [23804] INSTRUÇÂO:  SELECT *
+	            FROM rental as a
+	                LEFT JOIN inventory as b
+	                    on a.inventory_id = b.inventory_id
+	                LEFT JOIN film as c
+	                    on b.film_id = c.film_id
+	                LEFT JOIN film_actor as d
+	                    on c.actor_id = d.actor_id;
+2024-06-21 18:10:56.677 -03 [16908] ERRO:  não existe a coluna a.costumer_id no caractere 103
+2024-06-21 18:10:56.677 -03 [16908] DICA:  Talvez você queira fazer referência à coluna "a.customer_id".
+2024-06-21 18:10:56.677 -03 [16908] INSTRUÇÂO:  SELECT *
+	            FROM payment as a
+	                LEFT JOIN customer as b
+	                    on a.costumer_id = b.costumer_id;

@@ -1,0 +1,50 @@
+2024-06-19 13:00:38.379 -03 [16100] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
+2024-06-19 16:08:12.055 -03 [29176] LOG:  ponto de verificação começando:  time
+2024-06-19 16:10:59.139 -03 [29176] LOG:  ponto de verificação concluído: escritos 1458 buffers (8.9%); 1 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=158.609 s, sincronizados=7.853 s, total=167.091 s; sincronizados files=381, mais longo=0.179 s, média=0.021 s; distância=9624 kB, estimado=9624 kB; lsn=0/1F75048, refeito lsn=0/1F2CDD0
+2024-06-19 16:11:42.292 -03 [31456] ERRO:  coluna "film.title" deve aparecer na clÃ¡usula GROUP BY ou ser usada em uma funÃ§Ã£o de agregaÃ§Ã£o no caractere 36
+2024-06-19 16:11:42.292 -03 [31456] INSTRUÃ‡Ã‚O:  select count(*) from film order by title
+2024-06-19 16:23:12.188 -03 [29176] LOG:  ponto de verificação começando:  time
+2024-06-19 16:25:07.525 -03 [29176] LOG:  ponto de verificação concluído: escritos 995 buffers (6.1%); 0 arquivo(s) do WAL adicionados, 0 removidos, 1 reciclados; escritos=108.342 s, sincronizados=6.707 s, total=115.343 s; sincronizados files=309, mais longo=0.150 s, média=0.022 s; distância=4866 kB, estimado=9148 kB; lsn=0/23ED9E0, refeito lsn=0/23ED9A8
+2024-06-19 16:26:09.551 -03 [2140] FATAL:  autenticação do tipo senha falhou para o usuário "gfsil"
+2024-06-19 16:26:09.551 -03 [2140] DETALHE:  A função de banco de dados (role) "gfsil" não existe.
+	A conexão correspondeu ao arquivo "D:/OneDrive/Program/01 - scripts-base/EBAC/03-Cientista_de_Dados/02-Crisp_DM/21_modulo/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-06-19 16:26:24.149 -03 [26376] FATAL:  autenticação do tipo senha falhou para o usuário "gfsil"
+2024-06-19 16:26:24.149 -03 [26376] DETALHE:  A função de banco de dados (role) "gfsil" não existe.
+	A conexão correspondeu ao arquivo "D:/OneDrive/Program/01 - scripts-base/EBAC/03-Cientista_de_Dados/02-Crisp_DM/21_modulo/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-06-19 16:26:41.506 -03 [35216] FATAL:  autenticação do tipo senha falhou para o usuário "gfsil"
+2024-06-19 16:26:41.506 -03 [35216] DETALHE:  A função de banco de dados (role) "gfsil" não existe.
+	A conexão correspondeu ao arquivo "D:/OneDrive/Program/01 - scripts-base/EBAC/03-Cientista_de_Dados/02-Crisp_DM/21_modulo/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-06-19 16:27:33.207 -03 [13532] FATAL:  autenticação do tipo senha falhou para o usuário "gfsil"
+2024-06-19 16:27:33.207 -03 [13532] DETALHE:  A função de banco de dados (role) "gfsil" não existe.
+	A conexão correspondeu ao arquivo "D:/OneDrive/Program/01 - scripts-base/EBAC/03-Cientista_de_Dados/02-Crisp_DM/21_modulo/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-06-19 16:27:40.502 -03 [17180] FATAL:  autenticação do tipo senha falhou para o usuário "gfsil"
+2024-06-19 16:27:40.502 -03 [17180] DETALHE:  A função de banco de dados (role) "gfsil" não existe.
+	A conexão correspondeu ao arquivo "D:/OneDrive/Program/01 - scripts-base/EBAC/03-Cientista_de_Dados/02-Crisp_DM/21_modulo/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-06-19 16:27:54.433 -03 [28240] FATAL:  autenticação do tipo senha falhou para o usuário "gfsil"
+2024-06-19 16:27:54.433 -03 [28240] DETALHE:  A função de banco de dados (role) "gfsil" não existe.
+	A conexão correspondeu ao arquivo "D:/OneDrive/Program/01 - scripts-base/EBAC/03-Cientista_de_Dados/02-Crisp_DM/21_modulo/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-06-19 16:39:00.285 -03 [39860] FATAL:  não existe o banco de dados "demo-small-en-20170815.sql"
+2024-06-19 16:39:23.215 -03 [23144] FATAL:  autenticação do tipo senha falhou para o usuário "gfsil"
+2024-06-19 16:39:23.215 -03 [23144] DETALHE:  A função de banco de dados (role) "gfsil" não existe.
+	A conexão correspondeu ao arquivo "D:/OneDrive/Program/01 - scripts-base/EBAC/03-Cientista_de_Dados/02-Crisp_DM/21_modulo/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-06-19 16:39:52.748 -03 [38252] ERRO:  nÃ£o existe o banco de dados "demo"
+2024-06-19 16:39:52.748 -03 [38252] INSTRUÃ‡Ã‚O:  DROP DATABASE demo;
+2024-06-19 16:40:05.301 -03 [21612] ERRO:  cancelando tarefa de limpeza automÃ¡tica (autovacuum)
+2024-06-19 16:40:05.301 -03 [21612] CONTEXTO:  enquanto varrendo o bloco 2153 da relaÃ§Ã£o "bookings.boarding_passes"
+	limpeza automÃ¡tica da tabela "demo.bookings.boarding_passes"
+2024-06-19 16:43:12.581 -03 [29176] LOG:  ponto de verificação começando:  time
+2024-06-19 16:47:45.567 -03 [29176] LOG:  ponto de verificação concluído: escritos 5641 buffers (34.4%); 0 arquivo(s) do WAL adicionados, 0 removidos, 13 reciclados; escritos=269.340 s, sincronizados=3.095 s, total=272.995 s; sincronizados files=344, mais longo=0.141 s, média=0.009 s; distância=222697 kB, estimado=222697 kB; lsn=0/FD67FD0, refeito lsn=0/FD67F60
+2024-06-19 16:52:41.406 -03 [10028] FATAL:  autenticação do tipo senha falhou para o usuário "postgres"
+2024-06-19 16:52:41.406 -03 [10028] DETALHE:  A conexão correspondeu ao arquivo "D:/OneDrive/Program/01 - scripts-base/EBAC/03-Cientista_de_Dados/02-Crisp_DM/21_modulo/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-06-19 16:53:18.032 -03 [26644] ERRO:  nÃ£o existe a relaÃ§Ã£o "actor" no caractere 15
+2024-06-19 16:53:18.032 -03 [26644] INSTRUÃ‡Ã‚O:  select * from actor
+2024-06-19 16:53:33.550 -03 [38732] ERRO:  nÃ£o existe a relaÃ§Ã£o "acthor" no caractere 15
+2024-06-19 16:53:33.550 -03 [38732] INSTRUÃ‡Ã‚O:  select * from acthor
+2024-06-19 17:01:07.318 -03 [28528] LOG:  não foi possível receber dados do cliente: unrecognized winsock error 10054
+2024-06-19 17:01:07.324 -03 [18916] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
+2024-06-19 17:01:07.333 -03 [31924] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
+2024-06-19 17:01:07.336 -03 [36572] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
+2024-06-19 17:01:07.339 -03 [26716] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
+2024-06-19 17:01:07.339 -03 [35984] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
+2024-06-19 17:01:07.339 -03 [31456] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
+2024-06-19 17:01:07.338 -03 [1384] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
