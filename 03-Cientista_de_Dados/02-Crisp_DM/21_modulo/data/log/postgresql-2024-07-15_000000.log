@@ -1,0 +1,3 @@
+2024-07-15 08:27:26.217 -03 [29176] LOG:  desligando
+2024-07-15 08:27:26.274 -03 [29176] LOG:  ponto de verificação começando:  shutdown immediate
+2024-07-15 08:27:26.652 -03 [29176] LOG:  ponto de verificação concluído: escritos 10 buffers (0.1%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.070 s, sincronizados=0.105 s, total=0.435 s; sincronizados files=3, mais longo=0.044 s, média=0.035 s; distância=0 kB, estimado=200427 kB; lsn=0/FD68098, refeito lsn=0/FD68098
