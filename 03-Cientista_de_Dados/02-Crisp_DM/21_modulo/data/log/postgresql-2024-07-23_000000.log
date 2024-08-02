@@ -1,0 +1,4 @@
+2024-07-23 08:39:09.695 -03 [7628] ERRO:  cancelando a instrução devido a pedido do usuário
+2024-07-23 08:39:09.866 -03 [7304] LOG:  desligando
+2024-07-23 08:39:09.901 -03 [7304] LOG:  ponto de verificação começando:  shutdown immediate
+2024-07-23 08:39:10.079 -03 [7304] LOG:  ponto de verificação concluído: escritos 0 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.008 s, sincronizados=0.001 s, total=0.213 s; sincronizados files=0, mais longo=0.000 s, média=0.000 s; distância=0 kB, estimado=0 kB; lsn=0/FD683C8, refeito lsn=0/FD683C8
