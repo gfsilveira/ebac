@@ -47,9 +47,10 @@ def to_excel(df):
 
 # Função principal da aplicação
 def main():
+    link = "./03-Cientista_de_Dados/02-Crisp_DM/28_modulo/app_2/"
     # Configuração inicial da página da aplicação
     st.set_page_config(page_title = 'Telemarketing analisys', \
-        page_icon = 'telmarketing_icon.png',
+        page_icon = link+'telmarketing_icon.png',
         layout="wide",
         initial_sidebar_state='expanded'
     )
@@ -57,11 +58,10 @@ def main():
     # Título principal da aplicação
     st.write('# Telemarketing analisys')
     st.markdown("---")
-    link = "./03-Cientista_de_Dados/02-Crisp_DM/28_modulo/app_2/"
     st.markdown(os.listdir(link))
     
     # Apresenta a imagem na barra lateral da aplicação
-    image = Image.open("Bank-Branding.jpg")
+    image = Image.open(link+"Bank-Branding.jpg")
     st.sidebar.image(image)
 
     # Botão para carregar arquivo na aplicação
@@ -160,7 +160,7 @@ def main():
         df_xlsx = to_excel(bank)
         st.download_button(label='📥 Download tabela filtrada em EXCEL',
                             data=df_xlsx ,
-                            file_name= 'bank_filtered.xlsx')
+                            file_name= link+'bank_filtered.xlsx')
         st.markdown("---")
 
         # PLOTS    
@@ -183,14 +183,14 @@ def main():
         col1.write(bank_raw_target_perc)
         col1.download_button(label='📥 Download',
                             data=df_xlsx ,
-                            file_name= 'bank_raw_y.xlsx')
+                            file_name= link+'bank_raw_y.xlsx')
         
         df_xlsx = to_excel(bank_target_perc)
         col2.write('### Proporção da tabela com filtros')
         col2.write(bank_target_perc)
         col2.download_button(label='📥 Download',
                             data=df_xlsx ,
-                            file_name= 'bank_y.xlsx')
+                            file_name= link+'bank_y.xlsx')
         st.markdown("---")
     
 
