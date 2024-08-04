@@ -56,6 +56,7 @@ def main():
     # Título principal da aplicação
     st.write('# Telemarketing analisys')
     st.markdown("---")
+    st.markdown("TESTE")
     
     # Apresenta a imagem na barra lateral da aplicação
     image = Image.open("Bank-Branding.jpg")
@@ -222,7 +223,6 @@ def main():
 
 
 if __name__ == '__main__':
-    st.markdown("---")
 	main()
     
 
