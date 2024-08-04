@@ -6,6 +6,7 @@ import seaborn           as sns
 import matplotlib.pyplot as plt
 from PIL                 import Image
 from io                  import BytesIO
+import os
 
 # Set no tema do seaborn para melhorar o visual dos plots
 custom_params = {"axes.spines.right": False, "axes.spines.top": False}
@@ -56,7 +57,7 @@ def main():
     # Título principal da aplicação
     st.write('# Telemarketing analisys')
     st.markdown("---")
-    st.markdown("TESTE")
+    st.markdown(os.listdir())
     
     # Apresenta a imagem na barra lateral da aplicação
     image = Image.open("Bank-Branding.jpg")
