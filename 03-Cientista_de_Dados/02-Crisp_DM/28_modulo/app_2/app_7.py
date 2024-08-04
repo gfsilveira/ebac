@@ -57,7 +57,7 @@ def main():
     # Título principal da aplicação
     st.write('# Telemarketing analisys')
     st.markdown("---")
-    link = "./02-Crisp_DM/28_modulo/app_2/"
+    link = "./03-Cientista_de_Dados/02-Crisp_DM/28_modulo/app_2/"
     st.markdown(os.listdir(link))
     
     # Apresenta a imagem na barra lateral da aplicação
