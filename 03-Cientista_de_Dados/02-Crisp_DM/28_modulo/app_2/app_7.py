@@ -58,7 +58,6 @@ def main():
     # Título principal da aplicação
     st.write('# Telemarketing analisys')
     st.markdown("---")
-    st.markdown(os.listdir(link))
     
     # Apresenta a imagem na barra lateral da aplicação
     image = Image.open(link+"Bank-Branding.jpg")
