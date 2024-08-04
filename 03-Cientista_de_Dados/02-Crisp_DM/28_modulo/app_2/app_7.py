@@ -212,11 +212,11 @@ def main():
             ax[1].set_title('Dados filtrados',
                             fontweight ="bold")
         else:
-            bank_raw_target_perc.plot(kind='pie', autopct='%.2f', y='y', ax = ax[0])
+            bank_raw_target_perc.plot(kind='pie', autopct='%.2f', y='proportion', ax = ax[0])
             ax[0].set_title('Dados brutos',
                             fontweight ="bold")
             
-            bank_target_perc.plot(kind='pie', autopct='%.2f', y='y', ax = ax[1])
+            bank_target_perc.plot(kind='pie', autopct='%.2f', y='proportion', ax = ax[1])
             ax[1].set_title('Dados filtrados',
                             fontweight ="bold")
 
