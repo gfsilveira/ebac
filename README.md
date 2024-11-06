@@ -190,4 +190,11 @@
     - Entenda Como Funciona o Algoritmo
     - Determine o Número de Clusters
 
-## 30 - 
+## 30 - Hierárquicos/aglomerativos
+ - Diferencie previsão de explicação
+ - Faça inferência sobre os parâmetros
+ - Diferencie qualidade de complexidade
+ - Selecione modelos
+ - Regularização
+
+## 31 - 
