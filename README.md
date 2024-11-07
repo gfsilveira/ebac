@@ -196,5 +196,6 @@
  - Diferencie qualidade de complexidade
  - Selecione modelos
  - Regularização
+ - Biblioteca wget, para dowload files
 
 ## 31 - 
