@@ -198,4 +198,7 @@
  - Regularização
  - Biblioteca wget, para dowload files
 
-## 31 - 
+## 31 - Streamlit V
+ - Conheça o RFV
+ 
+## 32 - 
