@@ -172,7 +172,7 @@ def main():
         st.write('Quantidade de clientes por tipo de ação')
         st.write(df_RFV['acoes de marketing/crm'].value_counts(dropna=False))
     
-        st.write("#K-means")
+        st.write("# K-means")
         dict_clusters = {
             'Enviar cupons de desconto, Pedir para indicar nosso produto pra algum amigo, Ao lançar um novo produto enviar amostras grátis pra esses.':
             1,
