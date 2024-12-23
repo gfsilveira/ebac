@@ -1,7 +1,9 @@
-
 # Imports
 import pandas            as pd
 import streamlit         as st
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
 
 from io                  import BytesIO
 
@@ -168,7 +170,21 @@ def main():
 
         st.write('Quantidade de clientes por tipo de ação')
         st.write(df_RFV['acoes de marketing/crm'].value_counts(dropna=False))
-    st.markdown("#K-means")
+    
+        st.write("#K-means")
+        dict_clusters = {
+            'Enviar cupons de desconto, Pedir para indicar nosso produto pra algum amigo, Ao lançar um novo produto enviar amostras grátis pra esses.':
+            1,
+            'Churn! clientes que gastaram bem pouco e fizeram poucas compras, fazer nada':
+            2,
+            'Churn! clientes que gastaram bastante e fizeram muitas compras, enviar cupons de desconto para tentar recuperar':
+            3,
+            'Churn! clientes que gastaram bastante e fizeram muitas compras, enviar cupons de desconto para tentar recuperar':
+            4,
+            np.nan: 5
+        }
+        df_RFV['clusters'] = df_RFV['acoes de marketing/crm'].map(dict_clusters)
+        st.dataframe(df_RFV.head())
 
 if __name__ == '__main__':
 	main()
