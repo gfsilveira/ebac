@@ -192,22 +192,23 @@ def main():
         km = KMeans(n_clusters=k)
         km = km.fit(X_train)
         df_RFV['k-means'] = km.labels_
-
-        g = sns.scatterplot(
+        
+        fig = plt.figure(figsize=(10, 10))
+        sns.scatterplot(
             x='Valor',
             y='Frequencia',
             hue="clusters",
             data=df_RFV
         )
-        st.pyplot(g)
+        st.pyplot(fig)
         
-        h = sns.scatterplot(
-            x='Valor',
-            y='Frequencia',
-            hue="k-means",
-            data=df_RFV
-        )
-        st.pyplot(h)
+        # h = sns.scatterplot(
+        #     x='Valor',
+        #     y='Frequencia',
+        #     hue="k-means",
+        #     data=df_RFV
+        # )
+        # st.pyplot(h)
 
 
 if __name__ == '__main__':
