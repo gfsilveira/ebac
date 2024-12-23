@@ -168,6 +168,7 @@ def main():
 
         st.write('Quantidade de clientes por tipo de ação')
         st.write(df_RFV['acoes de marketing/crm'].value_counts(dropna=False))
+    st.markdown("#K-means")
 
 if __name__ == '__main__':
 	main()
