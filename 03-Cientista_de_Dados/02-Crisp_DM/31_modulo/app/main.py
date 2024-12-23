@@ -193,7 +193,7 @@ def main():
         km = km.fit(X_train)
         df_RFV['k-means'] = km.labels_
         
-        fig_1 = plt.figure(figsize=(10, 10))
+        fig_1 = plt.figure(figsize=(5, 5))
         plt.title("Clusters com RFV")
         sns.scatterplot(
             x='Valor',
@@ -203,7 +203,7 @@ def main():
         )
         st.pyplot(fig_1)
 
-        fig_2 = plt.figure(figsize=(10, 10))
+        fig_2 = plt.figure(figsize=(5, 5))
         plt.title("Clusters com K-means")
         sns.scatterplot(
             x='Valor',
