@@ -191,14 +191,21 @@
     - Determine o Número de Clusters
 
 ## 30 - Hierárquicos/aglomerativos
- - Diferencie previsão de explicação
- - Faça inferência sobre os parâmetros
- - Diferencie qualidade de complexidade
- - Selecione modelos
- - Regularização
- - Biblioteca wget, para dowload files
+    - Diferencie previsão de explicação
+    - Faça inferência sobre os parâmetros
+    - Diferencie qualidade de complexidade
+    - Selecione modelos
+    - Regularização
+    - Biblioteca wget, para dowload files
 
 ## 31 - Streamlit V
- - Conheça o RFV
+    - Conheça o RFV
  
-## 32 - 
+## 32 - Probabilidade
+    - Conheça modelos discretos
+    - Faça inferência sobre os parâmetros
+    - Diferencie qualidade de complexidade
+    - Selecione modelos
+    - Regularização
+
+## 33 - 
