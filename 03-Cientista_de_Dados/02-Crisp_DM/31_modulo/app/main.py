@@ -185,7 +185,13 @@ def main():
             np.nan: 5
         }
         df_RFV['clusters'] = df_RFV['acoes de marketing/crm'].map(dict_clusters)
-        st.dataframe(df_RFV.head())
+        
+        X_train = df_RFV[df_RFV.columns[:3]]
+
+        k = len(dict_clusters)
+        km = KMeans(n_clusters=k)
+        km = km.fit(X_train)
+        df_RFV['k-means'] = km.labels_
 
 if __name__ == '__main__':
 	main()
