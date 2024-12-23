@@ -1,6 +1,3 @@
 pandas
 streamlit
-numpy
-datetime
-PIL
 io
