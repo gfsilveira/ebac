@@ -193,6 +193,23 @@ def main():
         km = km.fit(X_train)
         df_RFV['k-means'] = km.labels_
 
+        g = sns.scatterplot(
+            x='Valor',
+            y='Frequencia',
+            hue="clusters",
+            data=df_RFV
+        )
+        st.pyplot(g)
+        
+        h = sns.scatterplot(
+            x='Valor',
+            y='Frequencia',
+            hue="k-means",
+            data=df_RFV
+        )
+        st.pyplot(h)
+
+
 if __name__ == '__main__':
 	main()
     
