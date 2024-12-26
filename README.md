@@ -215,4 +215,11 @@
     - Teste de hipóteses no Python
     - Teste T Pareado
 
+## 34 - Regressão III
+    - Realize inferência em regressão
+    - Faça inferência sobre Y
+    - Transforme em X
+    - Aplique regressão segmentada
+    - Utilize Lowess
+
 ## 34 - 
