@@ -208,4 +208,11 @@
     - Selecione modelos
     - Regularização
 
-## 33 - 
+## 33 - Inferência
+    - Lógica indutiva vs dedutiva
+    - O problema da inferência
+    - Teste de significância
+    - Teste de hipóteses no Python
+    - Teste T Pareado
+
+## 34 - 
