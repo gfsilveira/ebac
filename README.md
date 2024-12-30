@@ -222,4 +222,12 @@
     - Aplique regressão segmentada
     - Utilize Lowess
 
-## 34 - 
+## 35 - Regressão IV
+    - Apresente a Introdução
+    - Avalie as Suposições
+    - Aborde Casos de Correções
+    - Identifique Outliers
+    - Analise a Correlação nas Variáveis Explicativas - Multicolinearidade
+    - Explore Variáveis Ortogonais
+
+## 36 - 
