@@ -230,4 +230,9 @@
     - Analise a Correlação nas Variáveis Explicativas - Multicolinearidade
     - Explore Variáveis Ortogonais
 
-## 36 - 
+## 36 - Análise descritiva IV
+
+## 37 - Regressão Logística II
+
+## 38 - Streamlit VI e Pycaret
+
