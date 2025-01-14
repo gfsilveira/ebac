@@ -10,11 +10,7 @@ class PepilineProprio:
         # Substituir nulos
         df_copy_sub = valores_substituir[0]
         variavel_sub = "tempo_emprego"
-        try:
-            df_copy_sub.fillna({variavel_sub: np.mean(df_copy_sub[variavel_sub])}, inplace=True),
-        except:
-            None
-
+        df_copy_sub.fillna({variavel_sub: np.mean(df_copy_sub[variavel_sub])}, inplace=True),
         retorno = (
             df_copy_sub,
             valores_substituir[1]
@@ -27,7 +23,11 @@ class PepilineProprio:
         reg_redc_summary_frame = valores_remove[1]
         remov_index_max = reg_redc_summary_frame['hat_diag'].max()
         remov_index = reg_redc_summary_frame[reg_redc_summary_frame['hat_diag'] == remov_index_max]['hat_diag'].index
-        df_train_outliers = df_train_val.drop(remov_index)
+        try:
+            df_train_outliers = df_train_val.drop(remov_index)
+        except:
+            None
+
         return df_train_outliers
 
     def cria_dummies(self, df_train_outliers: pd.DataFrame) -> list:
