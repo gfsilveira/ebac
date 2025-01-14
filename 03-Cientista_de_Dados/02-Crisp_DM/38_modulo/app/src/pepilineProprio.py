@@ -1,10 +1,12 @@
 import numpy as np
 import pandas as pd
+from sklearn.preprocessing import FunctionTransformer
+from sklearn.pipeline import Pipeline
 from sklearn.decomposition import PCA
 
 
 class PepilineProprio:
-    def substitui_nulos(valores_substituir: list) -> list:
+    def substitui_nulos(self, valores_substituir: list) -> list:
         # Substituir nulos
         df_copy_sub = valores_substituir[0]
         variavel_sub = "tempo_emprego"
@@ -15,7 +17,7 @@ class PepilineProprio:
         )
         return retorno
 
-    def remove_outliers(valores_remove: list) -> pd.DataFrame:
+    def remove_outliers(self, valores_remove: list) -> pd.DataFrame:
         # Remoção de outliers
         df_train_val = valores_remove[0]
         reg_redc_summary_frame = valores_remove[1]
@@ -24,7 +26,7 @@ class PepilineProprio:
         df_train_outliers = df_train_val.drop(remov_index)
         return df_train_outliers
 
-    def cria_dummies(df_train_outliers: pd.DataFrame) -> list:
+    def cria_dummies(self, df_train_outliers: pd.DataFrame) -> list:
         # Criação de Dummie
         selecionar = [
             "sexo",
@@ -38,7 +40,7 @@ class PepilineProprio:
         df_train_outliers_dummies = pd.get_dummies(df_train_outliers[selecionar], drop_first=True)
         return (df_train_outliers_dummies, df_train_outliers)
 
-    def cria_pca(valores_pca: list):
+    def cria_pca(self, valores_pca: list):
         # PCA
         df_train_outliers_dummies = valores_pca[0]
         df_train_outliers = valores_pca[1]
@@ -56,3 +58,14 @@ class PepilineProprio:
                 inplace=True    
         )
         return pca
+    
+    def inicia_rotina(self) -> None:
+        rotina_pipe = Pipeline(
+            steps=[
+                ("substitui_nulos", FunctionTransformer(self.substitui_nulos)),
+                ("remove_outliers", FunctionTransformer(self.remove_outliers)),
+                ("cria_dummies", FunctionTransformer(self.cria_dummies)),
+                ("cria_pca", FunctionTransformer(self.cria_pca))
+            ]
+        )
+        return rotina_pipe
