@@ -10,7 +10,11 @@ class PepilineProprio:
         # Substituir nulos
         df_copy_sub = valores_substituir[0]
         variavel_sub = "tempo_emprego"
-        df_copy_sub.fillna({variavel_sub: np.mean(df_copy_sub[variavel_sub])}, inplace=True),
+        try:
+            df_copy_sub.fillna({variavel_sub: np.mean(df_copy_sub[variavel_sub])}, inplace=True),
+        except:
+            None
+
         retorno = (
             df_copy_sub,
             valores_substituir[1]
