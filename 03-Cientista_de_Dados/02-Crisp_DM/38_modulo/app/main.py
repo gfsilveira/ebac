@@ -19,9 +19,10 @@ def inicia() -> None:
         df = pd.read_csv(uploaded_file)
         st.dataframe(df.head())
 
-    rotina_pipe_import = PepilineProprio()
+    pipe_import = PepilineProprio()
+    rotina_pipe_import = pipe_import.inicia_rotina()
     st.write(rotina_pipe_import.steps)
-    
+
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
     inicia()
