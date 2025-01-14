@@ -7,10 +7,14 @@ def inicia() -> None:
 
     with st.sidebar:
         # Upload de arquivo
+        entrada_cvs = False
         uploaded_file = st.file_uploader("Choose a CSV file")
         if uploaded_file is not None:
-            df = pd.read_csv(uploaded_file)
-            st.dataframe(df.head())
+            entrada_cvs = True
+
+    if entrada_cvs:
+        df = pd.read_csv(uploaded_file)
+        st.dataframe(df.head())
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
