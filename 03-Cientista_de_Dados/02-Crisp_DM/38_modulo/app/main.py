@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 
+from src.pepilineProprio import PepilineProprio
+
+
 def inicia() -> None:
     # Entrada
     st.markdown("Entrada")
