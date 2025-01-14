@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from joblib import load
+import os
 
 from src.pepilineProprio import PepilineProprio
 
@@ -24,13 +25,14 @@ def inicia() -> None:
         rotina_pipe_import = pipe_import.inicia_rotina()
         st.write(rotina_pipe_import.steps)
 
-        reg_redc_summary_frame = load("./data/reg_redc_summary_frame")
-        enviar_transform = (
-            df,
-            reg_redc_summary_frame
-        )
-        df_final = rotina_pipe_import.transform(enviar_transform)
-        st.dataframe(df_final.head())
+        st.write(os.listdir())
+        # reg_redc_summary_frame = load("./data/reg_redc_summary_frame")
+        # enviar_transform = (
+        #     df,
+        #     reg_redc_summary_frame
+        # )
+        # df_final = rotina_pipe_import.transform(enviar_transform)
+        # st.dataframe(df_final.head())
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
