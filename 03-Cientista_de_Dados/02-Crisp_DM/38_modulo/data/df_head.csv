@@ -1,0 +1,6 @@
+data_ref,index,sexo,posse_de_veiculo,posse_de_imovel,qtd_filhos,tipo_renda,educacao,estado_civil,tipo_residencia,idade,tempo_emprego,qt_pessoas_residencia,renda,mau
+2015-01-01,5733,F,N,N,0,Empresário,Médio,Solteiro,Casa,43,6.873972602739726,1.0,2515.39,False
+2015-01-01,727,F,S,S,0,Assalariado,Médio,Casado,Casa,35,4.526027397260274,2.0,3180.19,False
+2015-01-01,6374,F,N,N,2,Assalariado,Médio,Casado,Casa,31,0.2438356164383561,4.0,1582.29,False
+2015-01-01,9566,F,N,N,0,Assalariado,Médio,Casado,Casa,54,12.772602739726029,2.0,13721.17,False
+2015-01-01,9502,F,S,N,0,Assalariado,Superior incompleto,Solteiro,Casa,31,8.432876712328767,1.0,2891.08,False
