@@ -30,6 +30,7 @@ class PepilineProprio:
 
         return df_train_outliers
 
+
     def cria_dummies(self, df_train_outliers: pd.DataFrame) -> list:
         # Criação de Dummie
         selecionar = [
