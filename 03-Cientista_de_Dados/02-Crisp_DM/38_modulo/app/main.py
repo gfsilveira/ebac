@@ -11,7 +11,7 @@ def inicia() -> None:
     with st.sidebar:
         # Upload de arquivo
         entrada_cvs = False
-        uploaded_file = st.file_uploader("Choose a CSV file")
+        uploaded_file = st.file_uploader("arquivo CSV com as informações")
         if uploaded_file is not None:
             entrada_cvs = True
 
