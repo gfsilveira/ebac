@@ -41,7 +41,8 @@ def inicia() -> None:
         reg_linear = modelos.load_reg_linear()
         st.write(reg_linear.summary())
 
-        st.write(reg_linear.predict(df_final))
+        df_final['renda_log_pred'] = reg_linear.predict(df_final)
+        st.dataframe(df_final.head())
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
