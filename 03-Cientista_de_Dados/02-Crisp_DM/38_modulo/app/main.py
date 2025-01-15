@@ -43,7 +43,7 @@ def inicia() -> None:
 
         st.markdown("# Previsão Modelo Regressão Pipeline")
         df_final['renda_log_pred'] = reg_linear.predict(df_final)
-        st.dataframe(df_final.head())
+        st.dataframe(df_final.iloc[:, -2:].head())
 
         st.markdown("# Modelo Classificação PyCaret")
         df['data_ref'] = pd.to_datetime(df['data_ref'])
@@ -52,7 +52,7 @@ def inicia() -> None:
         unseen_predictions = predict_model(final_lightgbm_pycaret, data=df)
         st.dataframe(unseen_predictions.iloc[:, -4:].head())
 
-        st.markdown("# Acurácia Classificação PyCaret")
+        st.markdown(f"# Acurácia Classificação PyCaret {score*100:.2f}%")
         score = accuracy_score(unseen_predictions.mau, unseen_predictions.prediction_label)
         st.write(f"Acurácia: {score*100:.2f}%")
 
