@@ -41,6 +41,8 @@ def inicia() -> None:
         reg_linear = modelos.load_reg_linear()
         st.write(reg_linear.summary())
 
+        st.write(reg_linear.predict(df_final))
+
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
     inicia()
