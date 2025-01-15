@@ -11,12 +11,12 @@ def inicia() -> None:
     with st.sidebar:
         # Upload de arquivo
         entrada_cvs = False
-        uploaded_file = st.file_uploader("arquivo CSV com as informações")
+        uploaded_file = st.file_uploader("Carregue seu arquivo CSV com as informações")
         if uploaded_file is not None:
             entrada_cvs = True
 
-    st.markdown("# Regressão Linear e Classificação de Base de Dados de Crédito")
-    st.markdown("Selecione ao lado o arquivo CSV com as informações")
+    st.markdown("# Predição da Base de Dados de Crédito")
+    st.markdown("Regressão Linear para a Renda e Classificação para Bom/Mau pagador")
     if entrada_cvs:
         st.markdown("## Base incial")
         df = pd.read_csv(uploaded_file)
