@@ -5,6 +5,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.decomposition import PCA
 from scipy.stats import t, ks_2samp
 from scipy.interpolate import interp1d
+import statsmodels.api as sm
 
 
 class PepilineProprio:
