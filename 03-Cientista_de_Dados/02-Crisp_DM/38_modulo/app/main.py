@@ -45,6 +45,7 @@ def inicia() -> None:
         df_final['renda_log_pred'] = reg_linear.predict(df_final)
         st.dataframe(df_final.head())
 
+        df['data_ref'] = pd.to_datetime(df['data_ref'])
         link = "03-Cientista_de_Dados/02-Crisp_DM/38_modulo/app/data/final_lightgbm_pycaret"
         final_lightgbm_pycaret = load(link)
         unseen_predictions = predict_model(final_lightgbm_pycaret, data=df)
