@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from joblib import load
 from pycaret.classification import predict_model
+from sklearn.metrics import accuracy_score
 
 from src.pepilineProprio import PepilineProprio
 from src.modelos import Modelos
@@ -18,14 +19,17 @@ def inicia() -> None:
             entrada_cvs = True
 
     if entrada_cvs:
+        st.markdown("# Base incial")
         df = pd.read_csv(uploaded_file)
         st.dataframe(df.head())
 
+        st.markdown("# Transformações Pipeline")
         pipe_import = PepilineProprio()
         rotina_pipe_import = pipe_import.inicia_rotina()
         st.write(rotina_pipe_import.steps)
 
         # st.write(os.listdir())
+        st.markdown("# PCA base incial")
         link = "03-Cientista_de_Dados/02-Crisp_DM/38_modulo/app/data/reg_redc_summary_frame"
         reg_redc_summary_frame = load(link)
         enviar_transform = (
@@ -36,20 +40,27 @@ def inicia() -> None:
         st.dataframe(df_final.head())
 
         modelos = Modelos(df_final=df_final)
-        reg = modelos.regrecao_linear()
-        st.write(reg.summary())
+        # reg = modelos.regrecao_linear()
+        # st.write(reg.summary())
 
+        st.markdown("# Modelo Regressão Pipeline")
         reg_linear = modelos.load_reg_linear()
         st.write(reg_linear.summary())
 
+        st.markdown("# Modelo Regressão Pipeline Previsão")
         df_final['renda_log_pred'] = reg_linear.predict(df_final)
         st.dataframe(df_final.head())
 
+        st.markdown("# Modelo Classificação PyCaret")
         df['data_ref'] = pd.to_datetime(df['data_ref'])
         link = "03-Cientista_de_Dados/02-Crisp_DM/38_modulo/app/data/final_lightgbm_pycaret"
         final_lightgbm_pycaret = load(link)
         unseen_predictions = predict_model(final_lightgbm_pycaret, data=df)
         st.dataframe(unseen_predictions.head())
+
+        st.markdown("# Acurácia Classificação PyCaret")
+        score = accuracy_score(unseen_predictions.mau, unseen_predictions.prediction_label)
+        st.write(f"Acurácia: {score*100:.2f}%")
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
