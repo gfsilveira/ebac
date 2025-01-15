@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from joblib import load
+from pycaret.classification import predict_model
 
 from src.pepilineProprio import PepilineProprio
 from src.modelos import Modelos
@@ -43,6 +44,11 @@ def inicia() -> None:
 
         df_final['renda_log_pred'] = reg_linear.predict(df_final)
         st.dataframe(df_final.head())
+
+        link = "03-Cientista_de_Dados/02-Crisp_DM/38_modulo/app/data/final_lightgbm_pycaret"
+        final_lightgbm_pycaret = load(link)
+        unseen_predictions = predict_model(final_lightgbm_pycaret, data=df)
+        st.dataframe(unseen_predictions.head())
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
