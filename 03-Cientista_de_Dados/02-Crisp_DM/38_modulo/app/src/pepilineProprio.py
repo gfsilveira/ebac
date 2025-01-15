@@ -3,9 +3,26 @@ import pandas as pd
 from sklearn.preprocessing import FunctionTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.decomposition import PCA
+from scipy.stats import t, ks_2samp
+from scipy.interpolate import interp1d
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
 
 
 class PepilineProprio:
+    def modifica_variaveis(self, df_modif: pd.DataFrame) -> pd.DataFrame:
+        df_modif['renda_log'] = np.log(df_modif['renda'])
+
+        # Define a suavização dos dados na variável lowess
+        lowess_train = sm.nonparametric.lowess(df_modif['renda_log'], df_modif['tempo_emprego'], frac=1/9)
+
+        # Valores de X e Y suavizados
+        f_train = interp1d(lowess_train[:, 0], lowess_train[:, 1], bounds_error=False)
+
+        df_modif.loc[:, 'tempo_emprego_lowess'] = f_train(df_modif['tempo_emprego'])
+
+        return df_modif
+
     def substitui_nulos(self, valores_substituir: list) -> list:
         # Substituir nulos
         df_copy_sub = valores_substituir[0]
@@ -43,6 +60,7 @@ class PepilineProprio:
             "tipo_residencia",
         ]
         df_train_outliers_dummies = pd.get_dummies(df_train_outliers[selecionar], drop_first=True)
+        df_train_outliers = self.modifica_variaveis(df_train_outliers)
         return (df_train_outliers_dummies, df_train_outliers)
 
     def cria_pca(self, valores_pca: list):
