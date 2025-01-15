@@ -8,9 +8,6 @@ from src.pepilineProprio import PepilineProprio
 from src.modelos import Modelos
 
 def inicia() -> None:
-    # Entrada
-    st.markdown("Entrada")
-
     with st.sidebar:
         # Upload de arquivo
         entrada_cvs = False
@@ -39,15 +36,12 @@ def inicia() -> None:
         df_final = rotina_pipe_import.transform(enviar_transform)
         st.dataframe(df_final.head())
 
-        modelos = Modelos(df_final=df_final)
-        # reg = modelos.regrecao_linear()
-        # st.write(reg.summary())
-
         st.markdown("# Modelo Regressão Pipeline")
+        modelos = Modelos(df_final=df_final)
         reg_linear = modelos.load_reg_linear()
         st.write(reg_linear.summary())
 
-        st.markdown("# Modelo Regressão Pipeline Previsão")
+        st.markdown("# Previsão Modelo Regressão Pipeline")
         df_final['renda_log_pred'] = reg_linear.predict(df_final)
         st.dataframe(df_final.head())
 
@@ -56,7 +50,7 @@ def inicia() -> None:
         link = "03-Cientista_de_Dados/02-Crisp_DM/38_modulo/app/data/final_lightgbm_pycaret"
         final_lightgbm_pycaret = load(link)
         unseen_predictions = predict_model(final_lightgbm_pycaret, data=df)
-        st.dataframe(unseen_predictions.head())
+        st.dataframe(unseen_predictions.iloc[:, :-4].head())
 
         st.markdown("# Acurácia Classificação PyCaret")
         score = accuracy_score(unseen_predictions.mau, unseen_predictions.prediction_label)
