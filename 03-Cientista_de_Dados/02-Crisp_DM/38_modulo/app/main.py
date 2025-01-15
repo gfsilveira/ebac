@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 from joblib import load
-import os
 
 from src.pepilineProprio import PepilineProprio
 from src.modelos import Modelos
@@ -26,7 +25,7 @@ def inicia() -> None:
         st.write(rotina_pipe_import.steps)
 
         # st.write(os.listdir())
-        link = "03-Cientista_de_Dados/02-Crisp_DM/38_modulo/app/data//reg_redc_summary_frame"
+        link = "03-Cientista_de_Dados/02-Crisp_DM/38_modulo/app/data/reg_redc_summary_frame"
         reg_redc_summary_frame = load(link)
         enviar_transform = (
             df,
@@ -38,6 +37,9 @@ def inicia() -> None:
         modelos = Modelos(df_final=df_final)
         reg = modelos.regrecao_linear()
         st.write(reg.summary())
+
+        reg_linear = modelos.load_reg_linear()
+        st.write(reg_linear.summary())
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
