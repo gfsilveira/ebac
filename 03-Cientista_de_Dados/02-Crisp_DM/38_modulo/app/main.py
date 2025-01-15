@@ -4,7 +4,7 @@ from joblib import load
 import os
 
 from src.pepilineProprio import PepilineProprio
-
+from src.modelos import Modelos
 
 def inicia() -> None:
     # Entrada
@@ -34,6 +34,10 @@ def inicia() -> None:
         )
         df_final = rotina_pipe_import.transform(enviar_transform)
         st.dataframe(df_final.head())
+
+        modelos = Modelos(df_final=df_final)
+        reg = modelos.regrecao_linear()
+        st.write(reg.summary())
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
