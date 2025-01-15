@@ -26,7 +26,7 @@ class PepilineProprio:
         try:
             df_train_outliers = df_train_val.drop(remov_index)
         except:
-            None
+            df_train_outliers = df_train_val.copy()
 
         return df_train_outliers
 
