@@ -52,7 +52,7 @@ def inicia() -> None:
         unseen_predictions = predict_model(final_lightgbm_pycaret, data=df)
         st.dataframe(unseen_predictions.iloc[:, -4:].head())
 
-        st.markdown(f"# Acurácia Classificação PyCaret {score*100:.2f}%")
+        st.markdown("# Acurácia Classificação PyCaret")
         score = accuracy_score(unseen_predictions.mau, unseen_predictions.prediction_label)
         st.write(f"Acurácia: {score*100:.2f}%")
 
