@@ -236,3 +236,28 @@
 
 ## 38 - Streamlit VI e Pycaret
 
+## 39 - SQL para análise de dados
+    - Extensão ipynb
+    - Ordenacao
+    - Where com like
+    - Google Colab
+    - Tabela no Athenas
+    - UNION
+    - Tabelas em SQL
+    - Coluna no Athenas
+    - Subqueries 
+    - Restricoes em colunas 
+    - Id_transacao no MySQL
+    - Subquery e a clausula FROM 
+    - Chave primeria
+    - Operador IN
+    - Subquery correlacionada e não correlacionada 
+    - SELECT DISTINT
+    - Operador LIKE 
+    - Selecionar colunas
+    - Wildcards
+
+## 40 - Entenda base de dados
+    - Ferramenta Web
+    - Autogerenciada
+    - Cadernos
