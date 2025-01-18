@@ -257,7 +257,16 @@
     - Selecionar colunas
     - Wildcards
 
-## 40 - Entenda base de dados
-    - Ferramenta Web
-    - Autogerenciada
-    - Cadernos
+## 40 - Base de dados e linguagemSQL
+    - AWS Athena
+    - AWS Console
+    - AWS S3
+    - DDL
+    - DML
+    - HTML
+    - MariaDB
+    - Markdown
+    - MySQL
+    - Oracle
+    - PostgreSQL
+    - SGBD

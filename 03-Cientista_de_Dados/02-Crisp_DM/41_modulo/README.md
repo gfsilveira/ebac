@@ -1,0 +1,3 @@
+# Módulo 2: Tabelas em SQL
+
+- **Tabelas**: em SQL, uma tabela é uma estrutura que armazena dados em linhas e colunas, semelhante a uma planilha. Cada tabela possui um nome único e pode ser composta por várias colunas, também conhecidas como campos, e várias linhas, também conhecidas como registros. As colunas de uma tabela possuem um tipo de dado associado, como texto, números inteiros ou decimais, datas, entre outros. Cada registro da tabela representa uma única ocorrência ou instância de dados, contendo valores para cada uma das colunas.
