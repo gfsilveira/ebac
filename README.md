@@ -270,3 +270,13 @@
     - Oracle
     - PostgreSQL
     - SGBD
+
+## 41 - Tabelas em SQL
+    - Constraints
+    - Double
+    - Int (integer)
+    - Índice
+    - Join
+    - Normalização
+    - Partição
+    - Timestamp
