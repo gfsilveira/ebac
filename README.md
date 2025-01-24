@@ -280,3 +280,32 @@
     - Normalização
     - Partição
     - Timestamp
+
+
+4 Cálculo das Probabilidades: Conceitos e fundamentos
+    4.1 Conceitos fundamentais em probabilidade
+    4.2 Axiomas de probabilidade de Kolmogorov
+    4.3 Atribuição das probabilidades
+5 Cálculo das Probabilidades: Distribuições de probabilidade discretas e contínuas
+    5.1 Distribuições de probabilidade discretas
+    5.2 Distribuições de probabilidade contínuas
+6 Inferência Estatística: Noções de amostragem e reamostragem
+    6.1 Teorema central do limite
+    6.2 Tipos de amostragem casuais/probabilísticas
+    6.3 Tipos de amostragem não casuais/não probabilísticas
+    6.4 Reamostragem
+    6.5 Intervalos de confiança
+7 Inferência Estatística: Modelagem Estatística - Introdução aos algoritmos de Machine Learning e comparação de modelos
+    7.1 Problemas de Machine Learning
+    7.2 Algoritmos de Machine Learning
+    7.3 Exemplo prático
+8 Experimentação Contínua
+    8.1 Experimentação Contínua na Ciência de Dados
+    8.2 Hipótese
+    8.3 Teste de hipótese
+    8.4 Teste de normalidade
+    8.5 Homocedasticidade
+    8.6 Testes de hipótese paramétricos
+    8.7 Testes de hipótese não paramétricos
+    8.8 Tamanho do efeito (effect size)
+    8.9 Considerações finais
